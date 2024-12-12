@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    a {
+        display: inline-block;
+        padding: 10px 20px;
+        color: white;
+        background-color: green;
+        text-decoration: none;
+        border: 2px solid green;
+        font-size: 18px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+
+    }
+
+    a:hover {
+        background-color: white;
+        color: green;
+        border: 2px solid green;
+
+    }
+
+    .list-container {
+        background-color: yellow;
+        padding: 10px;
+    }
+
+
+    ul {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    li {
+        color: red;
+    }
+
+    #container {
+        position: relative;
+        width: 50%;
+        padding: 20px;
+        background-color: white;
+    }
+
+    h1 {
+        margin: 0;
+        z-index: 1;
+        position: absolute;
+    }
+
+    #background-image {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100px;
+        height: 100%;
+        background-image: url(images.jpg );
+        background-size: cover;
+        z-index: -1;
+    }
+
+    #inline-example span {
+        display: inline;
+        border: 1px solid black;
+        background-color: yellow;
+        padding: 5px;
+
+    }
+
+    #inline-block-example span {
+
+        display: inline-block;
+        border: 1px solid black;
+        background-color: yellow;
+        height: 150px;
+        width: 160px;
+
+    }
+
+    #block-example span {
+        display: block;
+        border: 1px solid black;
+        background-color: yellow;
+        height: 150px;
+        width: 160px;
+    }
+</style>
+
+<body>
+    <a href="#">This is a link</a>
+    <br><br>
+    <div class="list-container">
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Coca Cola</li>
+        </ul>
+    </div>
+    <br><br>
+    <div id="container">
+        <div id="background-image"></div>
+        <h1>This is a heading</h1>
+        <img src="images.jpg" alt="">
+    </div>
+
+
+    <h1>The display Property</h1><br><br>
+    <h2>display: inline</h2>
+    <div id="inline-example"> this is text this is text this is text
+        <span>hello</span>
+        <span>there</span>
+        this is text this is text this is text
+    </div>
+
+    <h2>display: inline-block</h2>
+    <div id="inline-block-example">
+        this is text this is text this is text
+        <span>hello</span>
+        <span>there</span>
+        this is text this is text this is text
+    </div>
+
+    <h2>display: block</h2>
+    <div id="block-example">
+        this is text this is text this is text
+        <span>hello</span>
+        <span>there</span>
+        this is text this is text this is text
+    </div>
+</body>
+
+</html>
